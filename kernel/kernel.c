@@ -1,3 +1,6 @@
+#include "gdt.h"
+#include "../common/types.h"
+
 extern void kernel_smiley();
 
 void kernel(){
