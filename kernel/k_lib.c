@@ -1,18 +1,22 @@
 #include "k_lib.h"
+#include "../common/types.h"
 
 void *memcpy(void *dst, void *src, uint count)
 {
-	int i;
+	uint i;
+	uchar* d = dst;
+	uchar* s = src;
 	for (i=0; i<count;i++) 
-		dst[i]=src[i];
+		d[i]=s[i];
 	return dst;
 }
 
 void *memset(void *dst, int value, uint count)
 {
-	int i;
+	uint i;
+	uchar* d = dst;
 	for (i=0; i<count;i++)
-		dest[i]=value;
+		d[i]=value;
 	return dst;
 }
 
