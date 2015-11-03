@@ -1,6 +1,7 @@
 #include "../common/types.h"
 #include "gdt.h"
 #include "x86.h"
+#include "k_lib.h"
 
 // TODO: déclarer la table GDT
 static gdt_entry_t gdt[3];
